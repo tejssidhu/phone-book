@@ -1,0 +1,33 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-md-2 control-label">Title</label>
+        <div class="col-md-10">
+            <p class="form-control-static">{{contact.title}}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Forename</label>
+        <div class="col-md-10">
+            <p class="form-control-static">{{contact.forename}}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Surname</label>
+        <div class="col-md-10">
+            <p class="form-control-static">{{contact.surname}}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Email</label>
+        <div class="col-md-10">
+            <p class="form-control-static">{{contact.email}}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="button" class="btn btn-default" routerLink="/contacts">Back To List</button>
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</form>

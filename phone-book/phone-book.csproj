@@ -17,7 +17,7 @@
     <RootNamespace>phone_book</RootNamespace>
     <AssemblyName>phone-book</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -84,10 +84,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.component.css" />
-    <Content Include="app\app.component.html" />
+    <Content Include="app\contact.app.module.js" />
+    <Content Include="app\contacts\contact-detail.component.html" />
+    <Content Include="app\contacts\contact-detail.component.js" />
+    <Content Include="app\contacts\contact-list-resolver.service.js" />
+    <Content Include="app\contacts\contact-list.component.html" />
+    <Content Include="app\contacts\contact-list.component.js" />
+    <Content Include="app\contacts\contact-resolver.service.js" />
+    <Content Include="app\contacts\contact-thumbnail.component.html" />
+    <Content Include="app\contacts\contact-thumbnail.component.js" />
+    <Content Include="app\contacts\contacts-app.component.js" />
+    <Content Include="app\contacts\index.js" />
+    <Content Include="app\contacts\manage-contact.component.html" />
+    <Content Include="app\contacts\manage-contact.component.js" />
+    <Content Include="app\contacts\routes.js" />
+    <Content Include="app\contacts\shared\contact-model.js" />
+    <Content Include="app\contacts\shared\contact-service.js" />
+    <Content Include="app\contacts\shared\index.js" />
+    <Content Include="app\main.js" />
+    <TypeScriptCompile Include="app\nav\index.ts" />
+    <Content Include="app\nav\navbar.component.html" />
+    <Content Include="app\nav\navbar.component.js" />
+    <Content Include="app\routes.js" />
+    <Content Include="app\shared\globals.js" />
+    <Content Include="app\tests\contact-service.spec.js" />
+    <Content Include="app\user.app.module.js" />
+    <Content Include="app\user\index.js" />
+    <Content Include="app\user\login.component.html" />
+    <Content Include="app\user\login.component.js" />
+    <Content Include="app\user\shared\auth-service.js" />
+    <Content Include="app\user\shared\index.js" />
+    <Content Include="app\user\shared\user-model.js" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="scripts\angular-mocks.js" />
+    <None Include="scripts\angular.intellisense.js" />
+    <Content Include="scripts\angular.js" />
+    <Content Include="scripts\angular.min.js" />
+    <None Include="scripts\_references.js" />
     <Content Include="styles.css" />
     <Content Include="systemjs.config.extras.js" />
     <Content Include="systemjs.config.js" />
@@ -104,6 +138,31 @@
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
+    <Content Include="app\contacts\contact-detail.component.js.map" />
+    <Content Include="app\contacts\contact-list-resolver.service.js.map" />
+    <Content Include="app\contacts\contact-list.component.js.map" />
+    <Content Include="app\contacts\contact-resolver.service.js.map" />
+    <Content Include="app\contacts\contact-thumbnail.component.js.map" />
+    <Content Include="app\contacts\contacts-app.component.js.map" />
+    <Content Include="app\contacts\index.js.map" />
+    <Content Include="app\contacts\manage-contact.component.js.map" />
+    <Content Include="app\contacts\routes.js.map" />
+    <Content Include="app\contacts\shared\contact-model.js.map" />
+    <Content Include="app\contacts\shared\contact-service.js.map" />
+    <Content Include="app\contacts\shared\index.js.map" />
+    <Content Include="app\nav\navbar.component.js.map" />
+    <Content Include="app\shared\globals.js.map" />
+    <Content Include="app\tests\contact-service.spec.js.map" />
+    <Content Include="app\user\index.js.map" />
+    <Content Include="app\user\login.component.js.map" />
+    <Content Include="app\user\shared\auth-service.js.map" />
+    <Content Include="app\user\shared\index.js.map" />
+    <Content Include="app\user\shared\user-model.js.map" />
+    <Content Include="app\contact.app.module.js.map" />
+    <Content Include="app\main.js.map" />
+    <Content Include="app\routes.js.map" />
+    <Content Include="app\user.app.module.js.map" />
+    <Content Include="scripts\angular.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,18 +170,35 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app.component.ts" />
-    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\contact.app.module.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-detail.component.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-list-resolver.service.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-list.component.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-resolver.service.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-thumbnail.component.ts" />
+    <TypeScriptCompile Include="app\contacts\contacts-app.component.ts" />
+    <TypeScriptCompile Include="app\contacts\index.ts" />
+    <TypeScriptCompile Include="app\contacts\manage-contact.component.ts" />
+    <TypeScriptCompile Include="app\contacts\routes.ts" />
+    <TypeScriptCompile Include="app\contacts\shared\contact-model.ts" />
+    <TypeScriptCompile Include="app\contacts\shared\contact-service.ts" />
+    <TypeScriptCompile Include="app\contacts\shared\index.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\nav\navbar.component.ts" />
+    <TypeScriptCompile Include="app\routes.ts" />
+    <TypeScriptCompile Include="app\shared\globals.ts" />
+    <TypeScriptCompile Include="app\tests\contact-service.spec.ts" />
+    <TypeScriptCompile Include="app\user.app.module.ts" />
+    <TypeScriptCompile Include="app\user\index.ts" />
+    <TypeScriptCompile Include="app\user\login.component.ts" />
+    <TypeScriptCompile Include="app\user\shared\auth-service.ts" />
+    <TypeScriptCompile Include="app\user\shared\index.ts" />
+    <TypeScriptCompile Include="app\user\shared\user-model.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -140,7 +216,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3276</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3276/</IISUrl>
+          <IISUrl>http://localhost/phone-book</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
