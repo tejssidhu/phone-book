@@ -3,8 +3,9 @@ import { AuthService } from './shared/index';
 import { Router  } from '@angular/router';
 
 @Component({
+    moduleId: module.id,
     selector: 'login-app',
-    templateUrl: 'app/user/login.component.html'
+    templateUrl: 'login.component.html'
 })
 export class LoginComponent implements OnInit {
     model: any = {};
@@ -21,7 +22,7 @@ export class LoginComponent implements OnInit {
     login() {
         this.authService.loginUser(this.model.username, this.model.password).subscribe(
             data => {
-                this.router.navigate(['contacts'])
+                this.router.navigate(['contacts']);
             },
             error => {
                 this.loginInvalid = true;

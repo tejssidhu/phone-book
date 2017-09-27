@@ -22,7 +22,8 @@ var ManageContactComponent = (function () {
 }());
 ManageContactComponent = __decorate([
     core_1.Component({
-        templateUrl: 'app/contacts/manage-contact.component'
+        moduleId: module.id,
+        templateUrl: 'manage-contact.component'
     }),
     __metadata("design:paramtypes", [router_1.Router, index_1.ContactService])
 ], ManageContactComponent);

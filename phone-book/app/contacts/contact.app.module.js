@@ -10,9 +10,9 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
-var index_1 = require("./contacts/index");
-var routes_1 = require("./contacts/routes");
-var navbar_component_1 = require("./nav/navbar.component");
+var index_1 = require("./index");
+var routes_1 = require("./routes");
+var navbar_component_1 = require("../nav/navbar.component");
 var ContactsAppModule = (function () {
     function ContactsAppModule() {
     }
@@ -23,7 +23,7 @@ ContactsAppModule = __decorate([
         imports: [
             common_1.CommonModule,
             forms_1.FormsModule,
-            router_1.RouterModule.forRoot(routes_1.appRoutes)
+            router_1.RouterModule.forChild(routes_1.contactRoutes)
         ],
         declarations: [
             index_1.ContactsAppComponent,

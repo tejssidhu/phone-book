@@ -84,37 +84,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\contact.app.module.js" />
     <Content Include="app\contacts\contact-detail.component.html" />
-    <Content Include="app\contacts\contact-detail.component.js" />
-    <Content Include="app\contacts\contact-list-resolver.service.js" />
     <Content Include="app\contacts\contact-list.component.html" />
-    <Content Include="app\contacts\contact-list.component.js" />
-    <Content Include="app\contacts\contact-resolver.service.js" />
     <Content Include="app\contacts\contact-thumbnail.component.html" />
-    <Content Include="app\contacts\contact-thumbnail.component.js" />
-    <Content Include="app\contacts\contacts-app.component.js" />
-    <Content Include="app\contacts\index.js" />
     <Content Include="app\contacts\manage-contact.component.html" />
-    <Content Include="app\contacts\manage-contact.component.js" />
-    <Content Include="app\contacts\routes.js" />
-    <Content Include="app\contacts\shared\contact-model.js" />
-    <Content Include="app\contacts\shared\contact-service.js" />
-    <Content Include="app\contacts\shared\index.js" />
-    <Content Include="app\main.js" />
     <TypeScriptCompile Include="app\nav\index.ts" />
     <Content Include="app\nav\navbar.component.html" />
-    <Content Include="app\nav\navbar.component.js" />
-    <Content Include="app\routes.js" />
-    <Content Include="app\shared\globals.js" />
-    <Content Include="app\tests\contact-service.spec.js" />
-    <Content Include="app\user.app.module.js" />
-    <Content Include="app\user\index.js" />
     <Content Include="app\user\login.component.html" />
-    <Content Include="app\user\login.component.js" />
-    <Content Include="app\user\shared\auth-service.js" />
-    <Content Include="app\user\shared\index.js" />
-    <Content Include="app\user\shared\user-model.js" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="scripts\angular-mocks.js" />
@@ -138,30 +115,6 @@
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
-    <Content Include="app\contacts\contact-detail.component.js.map" />
-    <Content Include="app\contacts\contact-list-resolver.service.js.map" />
-    <Content Include="app\contacts\contact-list.component.js.map" />
-    <Content Include="app\contacts\contact-resolver.service.js.map" />
-    <Content Include="app\contacts\contact-thumbnail.component.js.map" />
-    <Content Include="app\contacts\contacts-app.component.js.map" />
-    <Content Include="app\contacts\index.js.map" />
-    <Content Include="app\contacts\manage-contact.component.js.map" />
-    <Content Include="app\contacts\routes.js.map" />
-    <Content Include="app\contacts\shared\contact-model.js.map" />
-    <Content Include="app\contacts\shared\contact-service.js.map" />
-    <Content Include="app\contacts\shared\index.js.map" />
-    <Content Include="app\nav\navbar.component.js.map" />
-    <Content Include="app\shared\globals.js.map" />
-    <Content Include="app\tests\contact-service.spec.js.map" />
-    <Content Include="app\user\index.js.map" />
-    <Content Include="app\user\login.component.js.map" />
-    <Content Include="app\user\shared\auth-service.js.map" />
-    <Content Include="app\user\shared\index.js.map" />
-    <Content Include="app\user\shared\user-model.js.map" />
-    <Content Include="app\contact.app.module.js.map" />
-    <Content Include="app\main.js.map" />
-    <Content Include="app\routes.js.map" />
-    <Content Include="app\user.app.module.js.map" />
     <Content Include="scripts\angular.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -175,7 +128,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\contact.app.module.ts" />
+    <TypeScriptCompile Include="app\contacts\contact.app.module.ts" />
     <TypeScriptCompile Include="app\contacts\contact-detail.component.ts" />
     <TypeScriptCompile Include="app\contacts\contact-list-resolver.service.ts" />
     <TypeScriptCompile Include="app\contacts\contact-list.component.ts" />

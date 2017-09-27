@@ -24,8 +24,9 @@ var ContactListComponent = (function () {
 }());
 ContactListComponent = __decorate([
     core_1.Component({
+        moduleId: module.id,
         selector: 'contacts-list',
-        templateUrl: '/app/contacts/contact-list.component.html'
+        templateUrl: 'contact-list.component.html'
     }),
     __metadata("design:paramtypes", [index_1.ContactService, router_1.ActivatedRoute])
 ], ContactListComponent);

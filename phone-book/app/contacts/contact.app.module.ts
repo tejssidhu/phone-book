@@ -9,16 +9,16 @@ import { ContactListComponent,
   ContactListResolver,
   ContactResolver,
   ContactService,
-  ContactsAppComponent } from './contacts/index';
+  ContactsAppComponent } from './index';
 
-import { appRoutes } from './contacts/routes';
-import { NavBarComponent } from './nav/navbar.component';
+import { contactRoutes } from './routes';
+import { NavBarComponent } from '../nav/navbar.component';
 
 @NgModule({
-  imports:      [
+  imports: [
     CommonModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forChild(contactRoutes)
   ],
   declarations: [
     ContactsAppComponent,

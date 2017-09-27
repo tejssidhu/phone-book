@@ -25,7 +25,8 @@ var ContactDetailComponent = (function () {
 }());
 ContactDetailComponent = __decorate([
     core_1.Component({
-        templateUrl: '/app/contacts/contact-detail.component.html'
+        moduleId: module.id,
+        templateUrl: 'contact-detail.component.html'
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute])
 ], ContactDetailComponent);

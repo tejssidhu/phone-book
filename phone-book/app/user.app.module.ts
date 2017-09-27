@@ -7,18 +7,16 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent, AuthService } from './user/index';
 
 import { appRoutes } from './routes';
-import { NavBarComponent } from './nav/index';
 
 @NgModule({
-  imports:      [
+  imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
   declarations: [
-    LoginComponent,
-    NavBarComponent
+    LoginComponent
   ],
   providers:    [
     AuthService

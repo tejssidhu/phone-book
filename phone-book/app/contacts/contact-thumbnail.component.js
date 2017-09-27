@@ -21,8 +21,9 @@ __decorate([
 ], ContactThumbnailComponent.prototype, "contact", void 0);
 ContactThumbnailComponent = __decorate([
     core_1.Component({
+        moduleId: module.id,
         selector: '[contact-thumbnail]',
-        templateUrl: '/app/contacts/contact-thumbnail.component.html'
+        templateUrl: 'contact-thumbnail.component.html'
     })
 ], ContactThumbnailComponent);
 exports.ContactThumbnailComponent = ContactThumbnailComponent;

@@ -3,8 +3,9 @@ import { IContact, ContactService } from './shared/index';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
+    moduleId: module.id,
     selector: 'contacts-list',
-    templateUrl: '/app/contacts/contact-list.component.html'
+    templateUrl: 'contact-list.component.html'
 })
 
 export class ContactListComponent implements OnInit {

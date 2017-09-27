@@ -4,14 +4,14 @@
 
         <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" autocomplete="off">
             <div class="form-group">
-                <label for="username" class="col-md-2 control-label">User Name</label>
-                <div class="col-md-10">
+                <label for="username" class="col-md-offset-1 col-md-1 control-label">User Name</label>
+                <div class="col-md-3">
                     <input id="username" name="username" type="text" class="form-control" [(ngModel)]="model.username" #username="ngModel" required placeholder="user name" />
                 </div>
             </div>
             <div class="form-group">
-                <label for="password" class="col-md-2 control-label">Password</label>
-                <div class="col-md-10">
+                <label for="password" class="col-md-offset-1 col-md-1 control-label">Password</label>
+                <div class="col-md-3">
                     <input id="password" name="password" type="password" class="form-control" [(ngModel)]="model.password" #password="ngModel" required placeholder="password" />
                 </div>
             </div>

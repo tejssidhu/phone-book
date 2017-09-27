@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { ContactService } from '../contacts/index';
 
 @Component({
+    moduleId: module.id,
     selector: 'nav-bar',
-    templateUrl: '/app/nav/navbar.component.html'
+    templateUrl: 'navbar.component.html'
 })
 export class NavBarComponent {
 

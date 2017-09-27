@@ -19,8 +19,9 @@ var NavBarComponent = (function () {
 }());
 NavBarComponent = __decorate([
     core_1.Component({
+        moduleId: module.id,
         selector: 'nav-bar',
-        templateUrl: '/app/nav/navbar.component.html'
+        templateUrl: 'navbar.component.html'
     }),
     __metadata("design:paramtypes", [index_1.ContactService])
 ], NavBarComponent);

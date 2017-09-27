@@ -13,7 +13,6 @@ var router_1 = require("@angular/router");
 var forms_1 = require("@angular/forms");
 var index_1 = require("./user/index");
 var routes_1 = require("./routes");
-var navbar_component_1 = require("./nav/navbar.component");
 var UsersAppModule = (function () {
     function UsersAppModule() {
     }
@@ -28,8 +27,7 @@ UsersAppModule = __decorate([
             router_1.RouterModule.forRoot(routes_1.appRoutes)
         ],
         declarations: [
-            index_1.LoginComponent,
-            navbar_component_1.NavBarComponent
+            index_1.LoginComponent
         ],
         providers: [
             index_1.AuthService

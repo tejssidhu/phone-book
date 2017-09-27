@@ -3,7 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { IContact } from './shared/index';
 
 @Component({
-    templateUrl: '/app/contacts/contact-detail.component.html'
+    moduleId: module.id,
+    templateUrl: 'contact-detail.component.html'
 })
 
 export class ContactDetailComponent {
