@@ -5,9 +5,17 @@
         </div>
 
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" *ngIf="this.authService.isAuthenticated()">
                 <li><a [routerLink]="['/contacts']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">My Contacts</a></li>
             </ul>
+            <div class="navbar-header navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a *ngIf="!this.authService.isAuthenticated()" [routerLink]="['login']">Login</a>
+                        <a *ngIf="this.authService.isAuthenticated()" [routerLink]="['login']">Log out</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

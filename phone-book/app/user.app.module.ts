@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { LoginComponent, AuthService } from './user/index';
+import { NavBarComponent } from './nav/index';
+import { HomeAppComponent } from './home-app.component';
 
 import { appRoutes } from './routes';
 
@@ -16,11 +18,13 @@ import { appRoutes } from './routes';
     RouterModule.forRoot(appRoutes)
   ],
   declarations: [
-    LoginComponent
+      HomeAppComponent,
+      LoginComponent,
+      NavBarComponent
   ],
   providers:    [
     AuthService
   ],
-  bootstrap:    [ LoginComponent ]
+  bootstrap: [ HomeAppComponent ]
 })
 export class UsersAppModule { }

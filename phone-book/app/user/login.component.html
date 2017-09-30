@@ -2,6 +2,8 @@
     <div class="col-md-10 col-md-offset-1">
         <h2>Login</h2>
 
+        <p *ngIf="loginInvalid" class="bg-danger">The username or password wasn't recognised, please try again.</p>
+
         <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" autocomplete="off">
             <div class="form-group">
                 <label for="username" class="col-md-offset-1 col-md-1 control-label">User Name</label>

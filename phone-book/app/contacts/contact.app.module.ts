@@ -8,11 +8,10 @@ import { ContactListComponent,
   ContactThumbnailComponent,
   ContactListResolver,
   ContactResolver,
-  ContactService,
-  ContactsAppComponent } from './index';
+  ContactService
+} from './index';
 
 import { contactRoutes } from './routes';
-import { NavBarComponent } from '../nav/navbar.component';
 
 @NgModule({
   imports: [
@@ -21,11 +20,9 @@ import { NavBarComponent } from '../nav/navbar.component';
     RouterModule.forChild(contactRoutes)
   ],
   declarations: [
-    ContactsAppComponent,
     ContactListComponent,
     ContactDetailComponent,
-    ContactThumbnailComponent,
-    NavBarComponent
+    ContactThumbnailComponent
   ],
   providers:    [
     ContactListResolver,

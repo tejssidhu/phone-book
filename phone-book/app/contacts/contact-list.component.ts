@@ -4,7 +4,6 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
     moduleId: module.id,
-    selector: 'contacts-list',
     templateUrl: 'contact-list.component.html'
 })
 

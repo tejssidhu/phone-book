@@ -88,6 +88,7 @@
     <Content Include="app\contacts\contact-list.component.html" />
     <Content Include="app\contacts\contact-thumbnail.component.html" />
     <Content Include="app\contacts\manage-contact.component.html" />
+    <TypeScriptCompile Include="app\home-app.component.ts" />
     <TypeScriptCompile Include="app\nav\index.ts" />
     <Content Include="app\nav\navbar.component.html" />
     <Content Include="app\user\login.component.html" />

@@ -1,7 +1,6 @@
 import {Component}from '@angular/core';
 
 @Component({
-    selector: 'contacts-app',
     template: `
         <nav-bar></nav-bar>
         <div class="contatiner">
