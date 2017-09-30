@@ -37,4 +37,11 @@ export class AuthService {
         let user = localStorage.getItem('currentUser');
         return!!user;
     }
+
+    getUserId() {
+        if (this.isAuthenticated()) {
+            let user = <IUser>JSON.parse(localStorage.getItem('currentUser'));
+            return user.id;
+        }        
+    }
 }
