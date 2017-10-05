@@ -316,3 +316,11 @@ __pycache__/
 /phone-book/app/contacts/contact-list-resolver.service.js
 /phone-book/app/contacts/contact-detail.component.js.map
 /phone-book/app/contacts/contact-detail.component.js
+/phone-book/app/contacts/contact-details/index.js.map
+/phone-book/app/contacts/contact-details/index.js
+/phone-book/app/contacts/contact-details/contact-resolver.service.js.map
+/phone-book/app/contacts/contact-details/contact-resolver.service.js
+/phone-book/app/contacts/contact-details/contact-detail.component.js.map
+/phone-book/app/contacts/contact-details/contact-detail.component.js
+/phone-book/app/contacts/contact-details/add-contact.component.js.map
+/phone-book/app/contacts/contact-details/add-contact.component.js

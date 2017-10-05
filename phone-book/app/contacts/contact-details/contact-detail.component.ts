@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IContact } from './shared/index';
+import { IContact } from '../shared/index';
 
 @Component({
     moduleId: module.id,

@@ -1,0 +1,33 @@
+﻿<form class="form-horizontal" autocomplete="off" #contactForm="ngForm" (ngSubmit)="saveContact()">
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="title">Title</label>
+        <div class="col-md-10">
+            <input name="title" id="title" type="text" class="form-control" [(ngModel)]="contact.title" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Forename</label>
+        <div class="col-md-10">
+            <input name="forename" id="forename" type="text" class="form-control" [(ngModel)]="contact.forename" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="surname">Surname</label>
+        <div class="col-md-10">
+            <input name="surname" id="surname" type="text" class="form-control" [(ngModel)]="contact.surname" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="email">Email</label>
+        <div class="col-md-10">
+            <input name="email" id="email" type="text" class="form-control" [(ngModel)]="contact.email" required #email="ngModel" #spy />
+        </div>
+        <div class="col-md-offset-2 col-md-10 text-danger" [hidden]="email.valid || (email.pristine && email.untouched)">Email is required</div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid">Save</button>
+            <button type="button" class="btn btn-default" [routerLink]="['/contacts']">Cancel</button>
+        </div>
+    </div>
+</form>

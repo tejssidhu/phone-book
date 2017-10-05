@@ -84,10 +84,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\contacts\contact-detail.component.html" />
+    <Content Include="app\contacts\contact-details\add-contact.component.html" />
+    <Content Include="app\contacts\contact-details\contact-detail.component.html" />
     <Content Include="app\contacts\contact-list.component.html" />
     <Content Include="app\contacts\contact-thumbnail.component.html" />
     <Content Include="app\contacts\manage-contact.component.html" />
+    <TypeScriptCompile Include="app\contacts\contact-details\add-contact.component.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-details\index.ts" />
     <TypeScriptCompile Include="app\home-app.component.ts" />
     <TypeScriptCompile Include="app\nav\index.ts" />
     <Content Include="app\nav\navbar.component.html" />
@@ -130,10 +133,10 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\contacts\contact.app.module.ts" />
-    <TypeScriptCompile Include="app\contacts\contact-detail.component.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-details\contact-detail.component.ts" />
     <TypeScriptCompile Include="app\contacts\contact-list-resolver.service.ts" />
     <TypeScriptCompile Include="app\contacts\contact-list.component.ts" />
-    <TypeScriptCompile Include="app\contacts\contact-resolver.service.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-details\contact-resolver.service.ts" />
     <TypeScriptCompile Include="app\contacts\contact-thumbnail.component.ts" />
     <TypeScriptCompile Include="app\contacts\contacts-app.component.ts" />
     <TypeScriptCompile Include="app\contacts\index.ts" />

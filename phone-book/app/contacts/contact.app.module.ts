@@ -1,6 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { ContactListComponent,
@@ -8,7 +8,8 @@ import { ContactListComponent,
   ContactThumbnailComponent,
   ContactListResolver,
   ContactResolver,
-  ContactService
+  ContactService,
+  AddContactComponent
 } from './index';
 
 import { contactRoutes } from './routes';
@@ -17,12 +18,14 @@ import { contactRoutes } from './routes';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(contactRoutes)
   ],
   declarations: [
     ContactListComponent,
     ContactDetailComponent,
-    ContactThumbnailComponent
+    ContactThumbnailComponent,
+    AddContactComponent
   ],
   providers:    [
     ContactListResolver,
