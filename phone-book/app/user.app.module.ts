@@ -10,6 +10,10 @@ import { HomeAppComponent } from './home-app.component';
 
 import { appRoutes } from './routes';
 
+import { TOASTR_TOKEN, Toastr } from './shared/index';
+
+declare let toastr: Toastr;
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -23,7 +27,11 @@ import { appRoutes } from './routes';
       NavBarComponent
   ],
   providers:    [
-    AuthService
+    AuthService,
+    {
+        provide: TOASTR_TOKEN,
+        useValue: toastr
+    }
   ],
   bootstrap: [ HomeAppComponent ]
 })

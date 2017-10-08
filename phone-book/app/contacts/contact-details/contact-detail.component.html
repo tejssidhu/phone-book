@@ -26,7 +26,7 @@
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <button type="button" class="btn btn-default" routerLink="/contacts">Back To List</button>
-            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" class="btn btn-primary" [routerLink]="['/contacts/edit', contact.id]">Edit</button>
             <button type="button" class="btn btn-danger">Delete</button>
         </div>
     </div>
