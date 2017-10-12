@@ -150,6 +150,7 @@
     <TypeScriptCompile Include="app\routes.ts" />
     <TypeScriptCompile Include="app\shared\globals.ts" />
     <TypeScriptCompile Include="app\shared\index.ts" />
+    <TypeScriptCompile Include="app\shared\modal-component.ts" />
     <TypeScriptCompile Include="app\shared\toastr-service.ts" />
     <TypeScriptCompile Include="app\tests\contact-service.spec.ts" />
     <TypeScriptCompile Include="app\user.app.module.ts" />

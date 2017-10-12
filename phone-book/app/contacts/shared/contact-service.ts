@@ -46,4 +46,11 @@ export class ContactService {
             return contact;
         }).catch(this.handleError);
     }
+
+    deleteContact(id: string): Observable<string> {
+        return this.http.delete(myGlobals.serviceRootUrl + 'Contacts(' + id + ')').map((response: Response) => {
+            let status = response.status;
+            return status;
+        }).catch(this.handleError);
+    }
 }

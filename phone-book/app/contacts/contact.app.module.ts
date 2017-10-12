@@ -13,6 +13,7 @@ import { ContactListComponent,
 } from './index';
 
 import { contactRoutes } from './routes';
+import { ModalComponent } from '../shared/index';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { contactRoutes } from './routes';
     ContactListComponent,
     ContactDetailComponent,
     ContactThumbnailComponent,
-    AddContactComponent
+    AddContactComponent,
+    ModalComponent
   ],
   providers:    [
     ContactListResolver,

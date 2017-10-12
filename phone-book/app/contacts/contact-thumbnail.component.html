@@ -2,4 +2,4 @@
 <td [routerLink]="['/contacts/contact', contact.id]">{{contact.forename}}</td>
 <td [routerLink]="['/contacts/contact', contact.id]">{{contact.surname}}</td>
 <td><button type="button" class="btn btn-primary btn-xs" [routerLink]="['/contacts/edit', contact.id]">Edit</button></td>
-<td><button type="button" class="btn btn-danger btn-xs">Delete</button></td>
+<td><modal-confirm></modal-confirm><button type="button" class="btn btn-danger btn-xs" (click)="deleteConfirm()">Delete</button></td>
