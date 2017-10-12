@@ -34,7 +34,6 @@ export class ContactThumbnailComponent {
                         this.toastr.error('Something went wrong');
                     });;
             }
-            console.log('observable called ' + clicked + ', id: ' + this.contact.id);
             this.subscription.unsubscribe();
         });
     }
