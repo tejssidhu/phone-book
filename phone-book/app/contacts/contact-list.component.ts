@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import { IContact, ContactService } from './shared/index';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { ModalComponent } from '../shared/index';
 import { TOASTR_TOKEN, Toastr } from '../shared/index'
 import { Observable, Subscription } from "rxjs/Rx";
@@ -15,7 +15,7 @@ export class ContactListComponent implements OnInit {
     contacts: IContact[];
     private subscription: Subscription;
 
-    constructor(private contactService: ContactService, private route: ActivatedRoute, private router: Router, @Inject(TOASTR_TOKEN) private toastr: Toastr) {
+    constructor(private contactService: ContactService, private route: ActivatedRoute, @Inject(TOASTR_TOKEN) private toastr: Toastr) {
 
     }
 

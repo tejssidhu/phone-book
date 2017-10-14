@@ -1,4 +1,6 @@
 <form class="form-horizontal">
+    <modal-confirm></modal-confirm>
+
     <div class="form-group">
         <label class="col-md-2 control-label">Title</label>
         <div class="col-md-10">
@@ -27,7 +29,7 @@
         <div class="col-md-offset-2 col-md-10">
             <button type="button" class="btn btn-default" routerLink="/contacts">Back To List</button>
             <button type="button" class="btn btn-primary" [routerLink]="['/contacts/edit', contact.id]">Edit</button>
-            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-danger" (click)="deleteConfirmation()">Delete</button>
         </div>
     </div>
 </form>
