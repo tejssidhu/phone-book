@@ -1,9 +1,5 @@
-import { Component, Input, ViewChild, Inject } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { IContact, ContactService } from './shared/index';
-import { ModalComponent } from '../shared/index';
-import { Observable, Subscription } from "rxjs/Rx";
-import { Router, ActivatedRoute } from '@angular/router';
-import { TOASTR_TOKEN, Toastr } from '../shared/index'
 
 @Component({
     moduleId: module.id,
@@ -11,30 +7,19 @@ import { TOASTR_TOKEN, Toastr } from '../shared/index'
     templateUrl: 'contact-thumbnail.component.html'
 })
 
-export class ContactThumbnailComponent {
-    @ViewChild(ModalComponent) confirmModal: ModalComponent;
+export class ContactThumbnailComponent implements OnInit {
     @Input() contact: IContact;
-    private subscription: Subscription;
+    @Output() confirmDelete = new EventEmitter<string>();
 
-    constructor(private contactService: ContactService, private router: Router, @Inject(TOASTR_TOKEN) private toastr: Toastr) {
+    constructor() {
+
+    }
+
+    ngOnInit() {
 
     }
 
     deleteConfirm() {
-        this.confirmModal.openModal();
-        this.subscription = this.confirmModal.observable.subscribe(clicked => {
-            if (clicked) {
-                this.contactService.deleteContact(this.contact.id).subscribe(
-                    data => {
-                        //TODO: animate the removal of this item
-                        this.router.navigate(['/contacts']);
-                        this.toastr.success('Contact Deleted');
-                    },
-                    error => {
-                        this.toastr.error('Something went wrong');
-                    });;
-            }
-            this.subscription.unsubscribe();
-        });
+        this.confirmDelete.emit(this.contact.id);
     }
 }

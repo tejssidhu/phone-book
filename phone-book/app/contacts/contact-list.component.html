@@ -2,6 +2,7 @@
     <div class="col-md-10 col-md-offset-1">
         <h2>My Contacts</h2>
 
+        <modal-confirm></modal-confirm>
         <div class="table-responsive">
             <table class="table table-hover table-striped table-condensed">
                 <thead>
@@ -15,7 +16,7 @@
                 </thead>
                 <tbody>
                     <ng-container *ngFor="let contact of contacts">
-                        <tr contact-thumbnail [contact]="contact"></tr>
+                        <tr contact-thumbnail [contact]="contact" (confirmDelete)="deleteConfirmation($event)"></tr>
                     </ng-container>
                 </tbody>
             </table>
