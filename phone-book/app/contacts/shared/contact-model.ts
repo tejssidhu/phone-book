@@ -5,4 +5,5 @@ export interface IContact {
     forename: string;
     surname?: string;
     email?: string;
+    deleted: boolean;
 }

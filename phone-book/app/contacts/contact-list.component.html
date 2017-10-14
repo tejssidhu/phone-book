@@ -16,7 +16,7 @@
                 </thead>
                 <tbody>
                     <ng-container *ngFor="let contact of contacts">
-                        <tr contact-thumbnail [contact]="contact" (confirmDelete)="deleteConfirmation($event)"></tr>
+                        <tr contact-thumbnail [contact]="contact" (confirmDelete)="deleteConfirmation($event)" [hidden]="contact.deleted"></tr>
                     </ng-container>
                 </tbody>
             </table>

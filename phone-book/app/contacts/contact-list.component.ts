@@ -29,8 +29,9 @@ export class ContactListComponent implements OnInit {
             if (clicked) {
                 this.contactService.deleteContact(id).subscribe(
                     data => {
-                        //TODO: animate the removal of this item
-                        this.router.navigate(['/contacts']);
+                        var contact = this.contacts.find(contact => contact.id === id);
+                        contact.deleted = true;
+
                         this.toastr.success('Contact Deleted');
                     },
                     error => {
